@@ -5,12 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slideshow</title>
+    <title>Slider</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <section class="slider-container">
+        <div class="slide fade">
+            <p class="number">1/3</p>
+            <img src="./images/img_mountains_wide.jpg" alt="">
+            <p class="caption">Caption One</p>
+        </div>
+        <div class="slide fade">
+            <p class="number">2/3</p>
+            <img src="./images/img_snow_wide.jpg" alt="">
+            <p class="caption">Caption Two</p>
+        </div>
+        <div class="slide fade">
+            <p class="number">3/3</p>
+            <img src="./images/img_nature_wide.jpg" alt="">
+            <p class="caption">Caption Three</p>
+        </div>
 
+
+        <a href="#" onclick="myFunc(-1)" class="prev">&#10094</a>
+        <a href="#" onclick="myFunc(1)" class="next">&#10095</a>
+    </section>
+
+    <section class="text-center">
+        <span onclick="dotBtnClick(0)" class="dot"></span>
+        <span onclick="dotBtnClick(1)" class="dot"></span>
+        <span onclick="dotBtnClick(2)" class="dot"></span>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
