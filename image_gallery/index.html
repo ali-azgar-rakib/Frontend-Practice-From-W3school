@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<section class="row">
+    <div class="col"><img onclick="openModal();showSlide(0)" src="./images/img_mountains_wide.jpg" alt=""
+            class="hover-shadow"></div>
+    <div class="col"><img onclick="openModal();showSlide(1)" src="./images/img_nature_wide.jpg" alt=""
+            class="hover-shadow"></div>
+    <div class="col"><img onclick="openModal();showSlide(2)" src="./images/img_snow_wide.jpg" alt=""
+            class="hover-shadow"></div>
+</section>
+
+
+<section id="myModel" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-body">
+        <div class="mySlide">
+            <div class="number-txt">1/3</div>
+            <img src="./images/img_mountains_wide.jpg" alt="">
+        </div>
+        <div class="mySlide">
+            <div class="number-txt">2/3</div>
+            <img src="./images/img_nature_wide.jpg" alt="">
+        </div>
+        <div class="mySlide">
+            <div class="number-txt">3/3</div>
+            <img src="./images/img_snow_wide.jpg" alt="">
+        </div>
+
+        <!-- next - previous control  -->
+        <a href="#" onclick="showSlide('increment')" class="prev">&#10094</a>
+        <a href="#" onclick="showSlide('decrement')" class="next">&#10095</a>
+
+        <!-- caption container  -->
+        <div class="caption-container">
+            <p class="caption">Demo</p>
+        </div>
+
+        <!-- thumbnail  -->
+        <div class="row">
+            <div class="col"><img onclick="showSlide(0)" class="demo" src="./images/img_mountains_wide.jpg"
+                    alt="Mountain">
+            </div>
+            <div class="col"><img onclick="showSlide(1)" class="demo" src="./images/img_nature_wide.jpg"
+                    alt="Beautiful Nature"></div>
+            <div class="col"><img onclick="showSlide(2)" class="demo" src="./images/img_snow_wide.jpg" alt="Snow"></div>
+        </div>
+    </div>
+</section>
+
+
+<script src="script.js"></script>
+
+<body>
+
+</body>
+
+</html>
