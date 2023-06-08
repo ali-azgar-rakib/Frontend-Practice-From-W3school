@@ -1,0 +1,32 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.accordion {
+  width: 100%;
+  color: #444;
+  background-color: #eee;
+  padding: 16px 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 24px;
+  border-bottom: 1px solid white;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  background-color: white;
+  padding: 16px 8px;
+  display: none;
+}
+
+.panelToggle {
+  display: block;
+}
