@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 12px;
+  display: inline-block;
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+.icon {
+  color: white;
+  padding: 10px 12px;
+  display: none;
+}
+
+.btn:hover,
+.icon:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .btn:not(:first-child) {
+    display: none;
+  }
+  .icon {
+    display: block;
+    float: right;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .topnav.responsive .btn {
+    display: block;
+  }
+}
