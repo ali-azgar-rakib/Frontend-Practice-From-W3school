@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button id="startBtn">Login</button>
+    <section id="modal" class="modal">
+        <span class="close">&times;</span>
+        <form action="#" class="modal-form">
+            <div class="imageContainer">
+                <img src="./images/img_avatar2.png" alt="">
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <button type="submit">Login</button>
+                <label for="rmme"><input type="checkbox" name="rmme" id="rmme">remember me</label>
+            </div>
+            <div class="container">
+                <button class="cancelBtn">Cancel</button>
+                <span>Forgot <a href="#">password ?</a></span>
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

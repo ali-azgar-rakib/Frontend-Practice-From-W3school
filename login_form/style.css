@@ -1,0 +1,92 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(60, 60, 60, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.modal-form {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  border: 1px solid #f1f1f1;
+  padding: 16px;
+  animation-name: form;
+  animation-duration: 0.8 s;
+  /* color: #f1f1f1; */
+}
+
+@keyframes form {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.imageContainer {
+  width: 100%;
+}
+.imageContainer img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  color: white;
+  background-color: #04aa6d;
+  padding: 6px 10px;
+  border: none;
+  display: block;
+  width: 100%;
+  margin: 8px auto;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  margin: 16px 0;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancelBtn {
+  background-color: #f44336;
+  display: inline-block;
+  width: 13%;
+  margin-left: 0;
+}
+
+#startBtn {
+  width: 20%;
+}
+
+.close {
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  cursor: pointer;
+}
