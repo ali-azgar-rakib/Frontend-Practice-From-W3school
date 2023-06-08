@@ -1,0 +1,27 @@
+.container {
+  margin: auto;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar-1,
+.bar-2,
+.bar-3 {
+  width: 30px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px;
+  transition: 0.6s;
+}
+
+.change .bar-1 {
+  transform: translate(0, 10px) rotate(-45deg);
+}
+
+.change .bar-2 {
+  opacity: 0;
+}
+
+.change .bar-3 {
+  transform: translate(0, -12px) rotate(45deg);
+}
