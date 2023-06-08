@@ -1,0 +1,65 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: calc(100vw - 4px);
+  height: 100vh;
+  background-image: url("./images/img_parallax.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+header h1 {
+  color: white;
+  width: 20%;
+  background-color: black;
+}
+
+.demo-para {
+  height: 40vh;
+  width: 98vw;
+  line-height: 1.5;
+  padding: 20px 16px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.less-height {
+  height: 70vh;
+  width: calc(100vw - 4px);
+  background-image: url("./images/img_parallax2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.small-section {
+  height: 40vh;
+  width: calc(100vw - 4px);
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  text-align: center;
+}
+
+.small-section p {
+  margin: 0;
+  width: 100%;
+  padding: 100px 40px;
+}
+.less-height h2 {
+  color: white;
+  width: 20%;
+  background-color: black;
+}
