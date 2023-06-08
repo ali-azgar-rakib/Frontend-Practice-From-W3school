@@ -1,0 +1,24 @@
+.progress {
+  background-color: grey;
+  width: 100vw;
+}
+
+.progress-bar {
+  background-color: blueviolet;
+  width: 10%;
+  height: 25px;
+  text-align: end;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+  color: white;
+}
+
+.btn {
+  color: white;
+  background-color: cadetblue;
+  padding: 8px 12px;
+  border: none;
+  margin: 10px auto;
+  cursor: pointer;
+}
